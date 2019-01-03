@@ -114,7 +114,7 @@ const Index = () => (
           </div>
           <div className="column is-one-third">
             <img src="/static/img/ruminations.png"/>
-            <List title="The 'Software Apocalypse'" desc="A change of perspective simulated by an article in The Atlantic." link="https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/"/>
+            <List title="The 'Software Apocalypse'" desc="A change of perspective stimulated by an article in The Atlantic." link="https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/"/>
 
           </div>
         </div>
