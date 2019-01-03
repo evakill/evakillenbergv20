@@ -13,7 +13,9 @@
   },
   "scripts": {
     "dev": "next",
-    "start": "next"
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "next build"
   },
   "engines": {
     "node": "v8.11.2"
