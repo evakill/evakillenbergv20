@@ -21,12 +21,12 @@ const Index = () => (
             <img src="/static/img/header.png"/>
             <br/>
             <br/>
-            <p className="is-size-4" style={styles.p}>And this is my website.</p>
+            <p className="is-size-4 is-size-6-mobile" style={styles.p}>And this is my website.</p>
           </div>
           <div className="container is-flex" style={{flexDirection: "column", padding: '4rem 7rem'}}>
-            <p className="is-size-4" style={styles.p}>
+            <p className="is-size-4 is-size-6-mobile" style={styles.p}>
             I'm a builder, storyteller, and adventurer. I strive for balance and growth.
-            I seek opportunities to lift people up. I'm happiest when learning, exploring, and connecting with people.
+            I seek opportunities to lift others up. I'm happiest when learning, exploring, and connecting with people.
             <br/>
             <br/>
             I'm originally from Little Compton, Rhode Island, but I have found homes in
@@ -103,7 +103,7 @@ const Index = () => (
         <div className="columns">
           <div className="column is-one-third">
             <img src="/static/img/inspirations.png"/>
-            <List src="" title="Frida Khalo" desc="A bold and brave artist and woman."/>
+            <List src="" title="Frida Khalo" desc="A bold artist and woman."/>
             <List src="" title="Invisible Cities" desc="A beautiful text by Italo Calvino."/>
           </div>
           <div className="column is-one-third">

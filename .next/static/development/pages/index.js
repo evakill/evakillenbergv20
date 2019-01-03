@@ -5915,7 +5915,7 @@ var Index = function Index() {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "is-size-4",
+    className: "is-size-4 is-size-6-mobile",
     style: styles.p,
     __source: {
       fileName: _jsxFileName,
@@ -5934,14 +5934,14 @@ var Index = function Index() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "is-size-4",
+    className: "is-size-4 is-size-6-mobile",
     style: styles.p,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
     },
     __self: this
-  }, "I'm a builder, storyteller, and adventurer. I strive for balance and growth. I seek opportunities to lift people up. I'm happiest when learning, exploring, and connecting with people.", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+  }, "I'm a builder, storyteller, and adventurer. I strive for balance and growth. I seek opportunities to lift others up. I'm happiest when learning, exploring, and connecting with people.", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
@@ -6409,7 +6409,7 @@ var Index = function Index() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
     src: "",
     title: "Frida Khalo",
-    desc: "A bold and brave artist and woman.",
+    desc: "A bold artist and woman.",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 106
@@ -6481,7 +6481,7 @@ var Index = function Index() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
     title: "The 'Software Apocalypse'",
-    desc: "A change of perspective simulated by an article in The Atlantic.",
+    desc: "A change of perspective stimulated by an article in The Atlantic.",
     link: "https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/",
     __source: {
       fileName: _jsxFileName,
