@@ -20,8 +20,7 @@ class Card extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      h1: false,
-      h2: false,
+      h1: false
     }
   }
 

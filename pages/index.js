@@ -100,7 +100,7 @@ const Index = () => (
            <div className="column is-3" style={{padding: '0', margin: '0'}}></div>
            <div className="column is-6" style={{padding: '0', margin: '0'}}>
             <a href="https://artsandculture.google.com/asset/viva-la-vida/bAGbsL-eW4XUXg">
-              <img src="/static/img/laying.png" />
+              <img src="/static/img/thinking.png" />
             </a>
            </div>
            <div className="column is-3" style={{padding: '0', margin: '0'}}></div>
