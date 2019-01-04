@@ -31,18 +31,24 @@ class Card extends React.Component {
 
   render() {
     return(
-      <Square
-      pose={this.state.hovering ? "hovered" : "idle"}
-      onMouseEnter={() => this.setState({ hovering: true })}
-      onMouseLeave={() => this.setState({ hovering: false })}>
-        <a href={this.props.link}>
+      <div>
+        { this.props.link ? (
+          <a href={this.props.link}>
+            <div className="content" style={{padding: '.25rem 2rem'}}>
+              <b className="is-size-6" style={ styles.p }>{this.props.title}</b>
+              { this.props.role ? <p className="is-8" style={{fontFamily: "Roboto", color: "gray"}}>{this.props.role}</p> : <div></div> }
+              <p className="is-size-7" style={ styles.p }>{this.props.desc}</p>
+            </div>
+          </a>
+        ) : (
           <div className="content" style={{padding: '.25rem 2rem'}}>
             <b className="is-size-6" style={ styles.p }>{this.props.title}</b>
             { this.props.role ? <p className="is-8" style={{fontFamily: "Roboto", color: "gray"}}>{this.props.role}</p> : <div></div> }
             <p className="is-size-7" style={ styles.p }>{this.props.desc}</p>
           </div>
-        </a>
-      </Square>
+        )
+      }
+    </div>
     );
   }
 }

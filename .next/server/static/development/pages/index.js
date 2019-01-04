@@ -155,7 +155,8 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Card).call(this, props));
     _this.state = {
-      hovering: false
+      h1: false,
+      h2: false
     };
     return _this;
   }
@@ -165,38 +166,14 @@ function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
-        pose: this.state.hovering ? "hovered" : "idle",
-        onMouseEnter: function onMouseEnter() {
-          return _this2.setState({
-            hovering: true
-          });
-        },
-        onMouseLeave: function onMouseLeave() {
-          return _this2.setState({
-            hovering: false
-          });
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: this.props.github,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 33
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "is-flex columns",
         style: {
           padding: "0.25rem"
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 30
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -206,21 +183,21 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 31
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: this.props.src,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 32
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "column is-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 34
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
@@ -228,30 +205,10 @@ function (_React$Component) {
         style: styles.p,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 35
         },
         __self: this
-      }, this.props.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40
-        },
-        __self: this
-      }), this.props.link ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        className: "is-size-6 is-size-7-mobile",
-        href: this.props.link.href,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 41
-        },
-        __self: this
-      }, this.props.link.label) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 41
-        },
-        __self: this
-      }), this.props.role ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }, this.props.title, " "), this.props.role ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "is-size-6 is-size-7-mobile",
         style: {
           fontFamily: "Roboto",
@@ -259,30 +216,76 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 36
         },
         __self: this
       }, this.props.role) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 36
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 43
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "is-size-6",
         style: styles.p,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }, this.props.desc, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container is-flex",
+        style: {
+          alignItems: "flex-end",
+          justifyContent: "space-between"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      }, this.props.link ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
+        pose: this.state.h1 ? "hovered" : "idle",
+        onMouseEnter: function onMouseEnter() {
+          return _this2.setState({
+            h1: true
+          });
+        },
+        onMouseLeave: function onMouseLeave() {
+          return _this2.setState({
+            h1: false
+          });
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: this.props.link,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 44
         },
         __self: this
-      }, this.props.desc, " "))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "tag has-text-grey is-size-7",
+        style: {
+          padding: '0px 5px',
+          margin: '0px 10px 0px 0px'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        },
+        __self: this
+      }, this.props.link))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50
+        },
+        __self: this
+      }))));
     }
   }]);
 
@@ -720,30 +723,17 @@ function (_React$Component) {
   _createClass(Card, [{
     key: "render",
     value: function render() {
-      var _this2 = this;
-
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
-        pose: this.state.hovering ? "hovered" : "idle",
-        onMouseEnter: function onMouseEnter() {
-          return _this2.setState({
-            hovering: true
-          });
-        },
-        onMouseLeave: function onMouseLeave() {
-          return _this2.setState({
-            hovering: false
-          });
-        },
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 34
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, this.props.link ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: this.props.link,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 36
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -753,7 +743,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 37
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
@@ -761,7 +751,7 @@ function (_React$Component) {
         style: styles.p,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 38
         },
         __self: this
       }, this.props.title), this.props.role ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -772,13 +762,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 39
         },
         __self: this
       }, this.props.role) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 39
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -786,10 +776,53 @@ function (_React$Component) {
         style: styles.p,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 40
         },
         __self: this
-      }, this.props.desc))));
+      }, this.props.desc))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "content",
+        style: {
+          padding: '.25rem 2rem'
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+        className: "is-size-6",
+        style: styles.p,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        },
+        __self: this
+      }, this.props.title), this.props.role ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "is-8",
+        style: {
+          fontFamily: "Roboto",
+          color: "gray"
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        },
+        __self: this
+      }, this.props.role) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "is-size-7",
+        style: styles.p,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        },
+        __self: this
+      }, this.props.desc)));
     }
   }]);
 
@@ -844,7 +877,7 @@ var Index = function Index() {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "columns",
+    className: "columns is-desktop",
     style: {
       padding: '0rem 4rem'
     },
@@ -868,6 +901,7 @@ var Index = function Index() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    id: "header",
     style: {
       paddingBottom: '4rem'
     },
@@ -937,9 +971,10 @@ var Index = function Index() {
     },
     __self: this
   }), "I'm originally from Little Compton, Rhode Island, but I have found homes in Providence, Newport, Chapel Hill, The Outer Banks, Philadelphia, and San Francisco. I'm currently living and learning at the University of Pennsylvania, with a major in Computer Science and a minor in Systems Engineering. ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    id: "things-ive-built",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 39
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -949,7 +984,7 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -959,66 +994,67 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://github.com/evakill",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/img/working.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 43
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "column is-7",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 46
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/img/built.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 47
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
     src: "/static/img/labsLine.png",
     title: "Penn Labs Website",
     github: "https://github.com/pennlabs/pennlabs.org",
-    link: {
-      href: "www.pennlabs.org",
-      label: "www.pennlabs.org"
-    },
+    link: "www.pennlabs.org",
     desc: "Converted the organizational website of Penn Labs, a software development organization at Penn, from HTML to React and added style and functionality components.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 48
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
     src: "/static/img/ergbotLine.png",
     title: "Ergbot Web and iOS App",
-    link: {
-      href: "http://www.ergbotrowing.com",
-      label: "www.ergbotrowing.com"
-    },
+    link: "www.ergbotrowing.com",
     desc: "Contributing code to both the iOS and Web app for ErgBot, a erg-logging software startup, in React Native and React.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 49
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
     src: "/static/img/mindbankLine.png",
     title: "MindBank Website",
-    role: "Coming Soon!",
+    link: "Coming Soon!",
     github: "https://github.com/evakill/mindbank-web",
     desc: "Designing and creating the organizational website of The MindBank, a consulting group at Penn, in React.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 50
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -1028,7 +1064,7 @@ var Index = function Index() {
     desc: "Created the concept, design, and codebase for Grapevine, a platform for small business owners to crowdsource event marketing, on mobile and web platforms in React Native and React.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 51
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -1038,13 +1074,14 @@ var Index = function Index() {
     desc: "Implemented a digital version of the Set card game in Java.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 52
     },
     __self: this
   })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    id: "things-ive-learned",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 57
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1054,7 +1091,7 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 58
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1064,93 +1101,80 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 59
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://en.wikipedia.org/wiki/Q.E.D.",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/img/learning.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 61
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "column is-7",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 64
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/img/learned.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 65
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
     src: "/static/img/121.png",
     title: "Data Structures and Algorithms",
-    link: {
-      href: "",
-      label: ""
-    },
     desc: "Learned about the theory, implementation, and runtime of basic data structures and algorithms in a computer science course.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 66
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
     src: "/static/img/160.png",
     title: "Discrete Math",
-    link: {
-      href: "",
-      label: ""
-    },
     desc: "Covered topics of combinatorics, functions, probability, set operations, graph theory, and induction in a mathematical, proof-based computer science course.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 67
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
     src: "/static/img/systems.png",
     title: "Dynamic Systems",
-    link: {
-      href: "",
-      label: ""
-    },
     desc: "Applied linear algebra concepts to model and analyze multi-dimentional systems of equations.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 68
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
     src: "/static/img/nets.png",
     title: "Network Theory",
-    link: {
-      href: "",
-      label: ""
-    },
     desc: "Learned about graph stuctures and algorithms in relation to social networks, recommendation systems, and search engines.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 69
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
     src: "/static/img/designthink.png",
     title: "Design Thinking",
-    link: {
-      href: "",
-      label: ""
-    },
     desc: "Participated in a series of workshops on design thinking through IBM then implemented a design thinking program at my school.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 70
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1160,20 +1184,28 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 72
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://en.wikipedia.org/wiki/Q.E.D.",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/img/learning.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 74
     },
     __self: this
-  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+  }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    id: "things-i-do",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 80
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1183,7 +1215,7 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 81
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1193,38 +1225,46 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 82
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://www.youtube.com/watch?v=smOzHzUOr-g",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 83
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/img/juggling.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 84
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "column is-7",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 87
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/img/do.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 88
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
     src: "/static/img/mindbankLine.png",
     title: "The MindBank",
     role: "President",
-    desc: "The MindBank is a student consulting group at Penn which provides advice and insights to companies, businesses, and startups focused on the campus environment. ",
+    desc: "The MindBank is a student consulting group at Penn which provides advice and insights to companies, businesses, and startups focused on the campus environment.",
+    link: "www.themindbank.net",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 89
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -1232,19 +1272,21 @@ var Index = function Index() {
     title: "Penn Labs",
     role: "Platform Team",
     desc: "Penn Labs is a student-run, open-source software development organization at Penn that creates and maintains products for Penn students.",
+    link: "www.pennlabs.org",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 90
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
     src: "/static/img/whiskLine.png",
     title: "Penn Appetit",
     role: "Culinary Team",
-    desc: "Penn Appetit is a culinary club at Penn which produces food magazines each semester. ",
+    desc: "Penn Appetit is a culinary club at Penn which produces food magazines each semester.",
+    link: "www.pennappetit.com",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 91
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -1254,7 +1296,7 @@ var Index = function Index() {
     desc: "Penn Women's Club soccer competes competitively with schools in the mid-Atlantic region.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 92
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -1264,13 +1306,14 @@ var Index = function Index() {
     desc: "OAX is a social philanthropic organization at Penn which fund-raises for Women Against Abuse, a non-profit dedicated to domestic violence prevention and awareness.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 93
     },
     __self: this
   })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    id: "inspir-aspr-rumin-ations",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 98
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1280,7 +1323,7 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 99
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1291,7 +1334,7 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 100
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1302,17 +1345,24 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 101
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://artsandculture.google.com/asset/viva-la-vida/bAGbsL-eW4XUXg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/img/laying.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 103
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "column is-3",
     style: {
       padding: '0',
@@ -1320,14 +1370,14 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 106
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "columns",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 108
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1338,14 +1388,14 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 109
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/img/inspirations.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 110
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1354,7 +1404,7 @@ var Index = function Index() {
     desc: "A bold artist and woman.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 111
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1363,7 +1413,7 @@ var Index = function Index() {
     desc: "A beautiful text by Italo Calvino.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 112
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1374,14 +1424,14 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 114
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/img/aspirations.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 115
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1390,7 +1440,7 @@ var Index = function Index() {
     desc: "Inspired by a trip to Mexico City.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 116
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1399,7 +1449,7 @@ var Index = function Index() {
     desc: "Keep in touch with good ol' pen and paper.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 117
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1408,7 +1458,7 @@ var Index = function Index() {
     desc: "Ideally in a camper van with a dog or best friend.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 118
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1419,14 +1469,14 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
+      lineNumber: 120
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/img/ruminations.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108
+      lineNumber: 121
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1435,143 +1485,24 @@ var Index = function Index() {
     link: "https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 122
     },
     __self: this
   }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "column is-1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115
+      lineNumber: 127
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117
+      lineNumber: 129
     },
     __self: this
   }));
-}; // const Index = () => (
-//   <div>
-//
-//     <Head />
-//
-//     <section>
-//       <div className="hero is-fullheight">
-//         <div className="hero-body is-flex" style={{flexDirection: "column"}}>
-//           <div className="container is-flex" style={{flexDirection: "column", padding: '2rem 7rem', justifyContent: "center"}}>
-//             <img src="/static/img/header.png"/>
-//             <br/>
-//             <br/>
-//             <p className="is-size-4 is-size-6-mobile" style={styles.p}>And this is my website.</p>
-//           </div>
-//           <div className="container is-flex" style={{flexDirection: "column", padding: '4rem 7rem'}}>
-//             <p className="is-size-4 is-size-6-mobile" style={styles.p}>
-//             I'm a builder, storyteller, and adventurer. I strive for balance and growth.
-//             I seek opportunities to lift others up. I'm happiest when learning, exploring, and connecting with people.
-//             <br/>
-//             <br/>
-//             I'm originally from Little Compton, Rhode Island, but I have found homes in
-//             Providence, Newport, Chapel Hill, The Outer Banks, Philadelphia, and San Francisco.
-//             I'm currently living and learning at the University of Pennsylvania, with a major in
-//             Computer Science and a minor in Systems Engineering. </p>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//
-//     <section>
-//       <div className="container is-flex" style={{flexDirection: "column", padding: '0rem 7rem', justifyContent: "center"}}>
-//         <div className="columns">
-//           <div className="column is-5 is-flex" style={{padding: 40, alignItems: "center"}}>
-//             <img src="/static/img/working.png"/>
-//           </div>
-//           <div className="column is-7">
-//             <img src="/static/img/built.png" />
-//             <Card src="/static/img/labsLine.png" title="Penn Labs Website" github="https://github.com/pennlabs/pennlabs.org" link={{href: "www.pennlabs.org", label: "www.pennlabs.org"}} desc="Converted the organizational website of Penn Labs, a software development organization at Penn, from HTML to React and added style and functionality components." />
-//             <Card src="/static/img/ergbotLine.png" title="Ergbot Web and iOS App" link={{href: "http://www.ergbotrowing.com", label: "www.ergbotrowing.com"}} desc="Contributing code to both the iOS and Web app for ErgBot, a erg-logging software startup, in React Native and React." />
-//             <Card src="/static/img/mindbankLine.png" title="MindBank Website" role="Coming Soon!" github="https://github.com/evakill/mindbank-web" desc="Designing and creating the organizational website of The MindBank, a consulting group at Penn, in React." />
-//             <Card src="/static/img/grapevineLine.png" title="Grapevine" github="https://github.com/evakill/grapevine-mobile" desc="Created the concept, design, and codebase for Grapevine, a platform for small business owners to crowdsource event marketing, on mobile and web platforms in React Native and React." />
-//             <Card src="/static/img/setLine.png" title="Set" github="https://github.com/evakill/set" desc="Implemented a digital version of the Set card game in Java." />
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//
-//     <section>
-//       <div className="container is-flex" style={{flexDirection: "column", padding: '4rem 7rem', justifyContent: "center"}}>
-//         <div className="columns">
-//         <div className="column is-5 is-flex is-hidden-tablet" style={{padding: 40, alignItems: "center"}}>
-//           <img src="/static/img/learning.png"/>
-//         </div>
-//           <div className="column is-7">
-//             <img src="/static/img/learned.png" />
-//             <Card src="/static/img/121.png" title="Data Structures and Algorithms" link={{href: "", label: ""}} desc="Learned about the theory, implementation, and runtime of basic data structures and algorithms in a computer science course." />
-//             <Card src="/static/img/160.png" title="Discrete Math" link={{href: "", label: ""}} desc="Covered topics of combinatorics, functions, probability, set operations, graph theory, and induction in a mathematical, proof-based computer science course." />
-//             <Card src="/static/img/systems.png" title="Dynamic Systems" link={{href: "", label: ""}} desc="Applied linear algebra concepts to model and analyze multi-dimentional systems of equations." />
-//             <Card src="/static/img/nets.png" title="Network Theory" link={{href: "", label: ""}} desc="Learned about graph stuctures and algorithms in relation to social networks, recommendation systems, and search engines." />
-//             <Card src="/static/img/designthink.png" title="Design Thinking" link={{href: "", label: ""}} desc="Participated in a series of workshops on design thinking through IBM then implemented a design thinking program at my school." />
-//           </div>
-//           <div className="column is-5 is-flex is-hidden-mobile" style={{padding: 40, alignItems: "center"}}>
-//             <img src="/static/img/learning.png"/>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//
-//     <section>
-//       <div className="container is-flex" style={{flexDirection: "column", padding: '0rem 7rem', justifyContent: "center"}}>
-//         <div className="columns">
-//           <div className="column is-5 is-flex" style={{padding: 40, alignItems: "center"}}>
-//             <img src="/static/img/juggling.png"/>
-//           </div>
-//           <div className="column is-7">
-//             <img src="/static/img/do.png" />
-//             <Card src="/static/img/mindbankLine.png" title="The MindBank" role="President" desc="The MindBank is a student consulting group at Penn which provides advice and insights to companies, businesses, and startups focused on the campus environment. " />
-//             <Card src="/static/img/labsLine.png" title="Penn Labs" role="Platform Team" desc="Penn Labs is a student-run, open-source software development organization at Penn that creates and maintains products for Penn students." />
-//             <Card src="/static/img/whiskLine.png" title="Penn Appetit" role="Culinary Team" desc="Penn Appetit is a culinary club at Penn which produces food magazines each semester. " />
-//             <Card src="/static/img/soccerLine.png" title="Penn Women's Club Soccer" role="Center Midfielder" desc="Penn Women's Club soccer competes competitively with schools in the mid-Atlantic region." />
-//             <Card src="/static/img/oaxLine.png" title="OAX" role="Standards Committee" desc="OAX is a social philanthropic organization at Penn which fund-raises for Women Against Abuse, a non-profit dedicated to domestic violence prevention and awareness."/>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//
-//     <section>
-//       <div className="container is-flex" style={{flexDirection: "column", padding: '4rem 7rem', justifyContent: "center", alignItems: "center"}}>
-//         <div className="columns" style={{padding: '0', margin: '0'}}>
-//           <div className="column is-3" style={{padding: '0', margin: '0'}}></div>
-//           <div className="column is-6" style={{padding: '0', margin: '0'}}>
-//             <img src="/static/img/laying.png" />
-//           </div>
-//           <div className="column is-3" style={{padding: '0', margin: '0'}}></div>
-//         </div>
-//         <div className="columns">
-//           <div className="column is-one-third">
-//             <img src="/static/img/inspirations.png"/>
-//             <List src="" title="Frida Khalo" desc="A bold artist and woman."/>
-//             <List src="" title="Invisible Cities" desc="A beautiful text by Italo Calvino."/>
-//           </div>
-//           <div className="column is-one-third">
-//             <img src="/static/img/aspirations.png"/>
-//             <List src="" title="Learn Spanish" desc="Inspired by a trip to Mexico City."/>
-//             <List src="" title="Sketch a day" desc="Keep in touch with good ol' pen and paper."/>
-//             <List src="" title="Roadtrip across the US" desc="Ideally in a camper van with a dog or best friend."/>
-//           </div>
-//           <div className="column is-one-third">
-//             <img src="/static/img/ruminations.png"/>
-//             <List title="The 'Software Apocalypse'" desc="A change of perspective stimulated by an article in The Atlantic." link="https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/"/>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//
-//     <Footer/>
-//
-//   </div>
-// );
-
+};
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
