@@ -14,7 +14,7 @@ const Index = () => (
   <div>
 
     <Head />
-    <div className="columns" style={{padding: '0rem 4rem'}}>
+    <div className="columns is-desktop" style={{padding: '0rem 4rem'}}>
       <div className="column is-1"></div>
       <div className="column is-10">
 
