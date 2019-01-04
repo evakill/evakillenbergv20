@@ -32,7 +32,7 @@ class Card extends React.Component {
       onMouseLeave={() => this.setState({ hovering: false })}>
         <a href={this.props.github}>
           <div className="is-flex columns" style={{padding: "0.25rem"}}>
-            <div className="column is-2 is-flex" style={{alignItems: "center"}}>
+            <div className="column is-2 is-2-mobile is-flex" style={{alignItems: "center"}}>
               <img src={this.props.src}/>
             </div>
             <div className="column is-10">
