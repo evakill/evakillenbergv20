@@ -110,7 +110,7 @@ const Index = () => (
              <img src="/static/img/inspirations.png"/>
              <List title="Frida Khalo" desc="A bold artist and woman."/>
              <List title="Invisible Cities" desc="A beautiful text by Italo Calvino."/>
-             <List title="On Vegetables" desc="Jeremy Fox's ode to modern, plant-based cooking." link="https://www.eater.com/cookbooks/2017/4/14/15300286/cookbook-on-vegetables-jeremy-fox"
+             <List title="On Vegetables" desc="Jeremy Fox's ode to modern, plant-based cooking." link="https://www.eater.com/cookbooks/2017/4/14/15300286/cookbook-on-vegetables-jeremy-fox"/>
            </div>
            <div className="column is-one-third" style={{padding: '0', margin: '0'}}>
              <img src="/static/img/aspirations.png"/>
