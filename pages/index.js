@@ -108,18 +108,21 @@ const Index = () => (
          <div className="columns">
            <div className="column is-one-third" style={{padding: '0', margin: '0'}}>
              <img src="/static/img/inspirations.png"/>
-             <List src="" title="Frida Khalo" desc="A bold artist and woman."/>
-             <List src="" title="Invisible Cities" desc="A beautiful text by Italo Calvino."/>
+             <List title="Frida Khalo" desc="A bold artist and woman."/>
+             <List title="Invisible Cities" desc="A beautiful text by Italo Calvino."/>
+             <List title="On Vegetables" desc="Jeremy Fox's ode to modern, plant-based cooking." link="https://www.eater.com/cookbooks/2017/4/14/15300286/cookbook-on-vegetables-jeremy-fox"
            </div>
            <div className="column is-one-third" style={{padding: '0', margin: '0'}}>
              <img src="/static/img/aspirations.png"/>
-             <List src="" title="Learn Spanish" desc="Inspired by a trip to Mexico City."/>
-             <List src="" title="Sketch a day" desc="Keep in touch with good ol' pen and paper."/>
-             <List src="" title="Roadtrip across the US" desc="Ideally in a camper van with a dog or best friend."/>
+             <List title="Build in Python" desc="Looking to learn and apply a new language."/>
+             <List title="Learn Spanish" desc="Inspired by a trip to Mexico City."/>
+             <List title="Sketch a day" desc="Keep in touch with good ol' pen and paper."/>
+             <List title="Roadtrip across the US" desc="Ideally in a camper van with a dog or best friend."/>
            </div>
            <div className="column is-one-third" style={{padding: '0', margin: '0'}}>
              <img src="/static/img/ruminations.png"/>
              <List title="The 'Software Apocalypse'" desc="A change of perspective stimulated by an article in The Atlantic." link="https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/"/>
+             <List title="Resolutions vs. Habits" desc="The optimal way to make to make meaningful and systematic life changes" />
            </div>
          </div>
          </section>
@@ -128,6 +131,5 @@ const Index = () => (
     </div>
     <Footer/>
   </div>
-);
 
 export default Index;
