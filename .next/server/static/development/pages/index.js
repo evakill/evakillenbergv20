@@ -1406,7 +1406,6 @@ var Index = function Index() {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    src: "",
     title: "Frida Khalo",
     desc: "A bold artist and woman.",
     __source: {
@@ -1415,7 +1414,6 @@ var Index = function Index() {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    src: "",
     title: "Invisible Cities",
     desc: "A beautiful text by Italo Calvino.",
     __source: {
@@ -1423,6 +1421,15 @@ var Index = function Index() {
       lineNumber: 112
     },
     __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    title: "On Vegetables",
+    desc: "Jeremy Fox's ode to modern, plant-based cooking.",
+    link: "https://www.eater.com/cookbooks/2017/4/14/15300286/cookbook-on-vegetables-jeremy-fox",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 113
+    },
+    __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "column is-one-third",
     style: {
@@ -1431,41 +1438,46 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 115
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/img/aspirations.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    src: "",
-    title: "Learn Spanish",
-    desc: "Inspired by a trip to Mexico City.",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 116
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    src: "",
-    title: "Sketch a day",
-    desc: "Keep in touch with good ol' pen and paper.",
+    title: "Build in Python",
+    desc: "Looking to learn and apply a new language.",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 117
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    src: "",
+    title: "Learn Spanish",
+    desc: "Inspired by a trip to Mexico City.",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    title: "Sketch a day",
+    desc: "Keep in touch with good ol' pen and paper.",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 119
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
     title: "Roadtrip across the US",
     desc: "Ideally in a camper van with a dog or best friend.",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118
+      lineNumber: 120
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1476,14 +1488,14 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 122
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/img/ruminations.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121
+      lineNumber: 123
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -1492,20 +1504,28 @@ var Index = function Index() {
     link: "https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122
+      lineNumber: 124
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    title: "Resolutions vs. Habits",
+    desc: "Debating the optimal way to make to make meaningful and systematic life changes.",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125
     },
     __self: this
   }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "column is-1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 127
+      lineNumber: 130
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 132
     },
     __self: this
   }));

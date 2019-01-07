@@ -122,7 +122,7 @@ const Index = () => (
            <div className="column is-one-third" style={{padding: '0', margin: '0'}}>
              <img src="/static/img/ruminations.png"/>
              <List title="The 'Software Apocalypse'" desc="A change of perspective stimulated by an article in The Atlantic." link="https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/"/>
-             <List title="Resolutions vs. Habits" desc="The optimal way to make to make meaningful and systematic life changes" />
+             <List title="Resolutions vs. Habits" desc="Debating the optimal way to make to make meaningful and systematic life changes." />
            </div>
          </div>
          </section>
@@ -130,6 +130,6 @@ const Index = () => (
       <div className="column is-1"></div>
     </div>
     <Footer/>
-  </div>
+  </div>);
 
 export default Index;
