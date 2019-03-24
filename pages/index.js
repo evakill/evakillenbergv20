@@ -88,7 +88,7 @@ const Index = () => (
               <img src="/static/img/do.png" />
               <Card src="/static/img/mindbankLine.png" title="The MindBank" role="President" desc="The MindBank is a student consulting group at Penn which provides advice and insights to companies, businesses, and startups focused on the campus environment." link="https://www.themindbank.net" />
               <Card src="/static/img/labsLine.png" title="Penn Labs" role="Platform Team" desc="Penn Labs is a student-run, open-source software development organization at Penn that creates and maintains products for Penn students." link="https://www.pennlabs.org" />
-              <Card src="/static/img/whiskLine.png" title="Penn Appetit" role="Culinary Team" desc="Penn Appetit is a culinary club at Penn which produces food magazines each semester." link="https://www.pennappetit.com" />
+              <Card src="/static/img/whiskLine.png" title="Penn Appetit" role="Culinary Team" desc="Penn Appetit is a culinary club at Penn which produces food magazines each semester." link="http://www.pennappetit.com/" />
               <Card src="/static/img/soccerLine.png" title="Penn Women's Club Soccer" role="Center Midfielder" desc="Penn Women's Club soccer competes competitively with schools in the mid-Atlantic region." />
               <Card src="/static/img/oaxLine.png" title="OAX" role="Standards Committee" desc="OAX is a social philanthropic organization at Penn which fund-raises for Women Against Abuse, a non-profit dedicated to domestic violence prevention and awareness." />
             </div>

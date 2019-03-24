@@ -1324,7 +1324,7 @@ var Index = function Index() {
     title: "Penn Appetit",
     role: "Culinary Team",
     desc: "Penn Appetit is a culinary club at Penn which produces food magazines each semester.",
-    link: "https://www.pennappetit.com",
+    link: "http://www.pennappetit.com/",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 91
