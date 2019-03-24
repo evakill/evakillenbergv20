@@ -1094,7 +1094,7 @@ var Index = function Index() {
     src: "/static/img/labsLine.png",
     title: "Penn Labs Website",
     github: "https://github.com/pennlabs/pennlabs.org",
-    link: "www.pennlabs.org",
+    link: "https://www.pennlabs.org",
     desc: "Converted the organizational website of Penn Labs, a software development organization at Penn, from HTML to React and added style and functionality components.",
     __source: {
       fileName: _jsxFileName,
@@ -1104,7 +1104,7 @@ var Index = function Index() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
     src: "/static/img/ergbotLine.png",
     title: "Ergbot Web and iOS App",
-    link: "www.ergbotrowing.com",
+    link: "https://www.ergbotrowing.com",
     desc: "Contributing code to both the iOS and Web app for ErgBot, a erg-logging software startup, in React Native and React.",
     __source: {
       fileName: _jsxFileName,
@@ -1326,7 +1326,7 @@ var Index = function Index() {
     title: "The MindBank",
     role: "President",
     desc: "The MindBank is a student consulting group at Penn which provides advice and insights to companies, businesses, and startups focused on the campus environment.",
-    link: "www.themindbank.net",
+    link: "https://www.themindbank.net",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 89
@@ -1337,7 +1337,7 @@ var Index = function Index() {
     title: "Penn Labs",
     role: "Platform Team",
     desc: "Penn Labs is a student-run, open-source software development organization at Penn that creates and maintains products for Penn students.",
-    link: "www.pennlabs.org",
+    link: "https://www.pennlabs.org",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 90
@@ -1348,7 +1348,7 @@ var Index = function Index() {
     title: "Penn Appetit",
     role: "Culinary Team",
     desc: "Penn Appetit is a culinary club at Penn which produces food magazines each semester.",
-    link: "www.pennappetit.com",
+    link: "https://www.pennappetit.com",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 91
