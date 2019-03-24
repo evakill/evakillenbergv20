@@ -20,8 +20,14 @@ class Card extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      h1: false
+      h1: false,
+      modal: "modal",
     }
+  }
+
+  modalToggle = (e) => {
+    var newClass = (this.state.modal === "modal") ? "modal is-active" : "modal";
+    this.setState({modalClass: newClass});
   }
 
   render() {
@@ -47,7 +53,13 @@ class Card extends React.Component {
                 </a>
               </Square>
               ) : <div></div> }
+          </div> 
+        </div>
+        <div class={this.state.modalClass}>
+          <div class="modal-background"></div>
+          <div class="modal-content">
           </div>
+          <button class="modal-close is-large" onPress={this.modalToggle} aria-label="close"></button>
         </div>
       </div>
     );

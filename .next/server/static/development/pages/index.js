@@ -119,13 +119,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 var Square = react_pose__WEBPACK_IMPORTED_MODULE_1___default.a.div({
@@ -154,8 +156,18 @@ function (_React$Component) {
     _classCallCheck(this, Card);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Card).call(this, props));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "modalToggle", function (e) {
+      var newClass = _this.state.modal === "modal" ? "modal is-active" : "modal";
+
+      _this.setState({
+        modalClass: newClass
+      });
+    });
+
     _this.state = {
-      h1: false
+      h1: false,
+      modal: "modal"
     };
     return _this;
   }
@@ -172,7 +184,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 35
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -182,21 +194,21 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 36
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: this.props.src,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 37
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "column is-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 39
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
@@ -204,7 +216,7 @@ function (_React$Component) {
         style: styles.p,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 40
         },
         __self: this
       }, this.props.title, " "), this.props.role ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -215,13 +227,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 41
         },
         __self: this
       }, this.props.role) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 41
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -229,7 +241,7 @@ function (_React$Component) {
         style: styles.p,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 42
         },
         __self: this
       }, this.props.desc, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -240,7 +252,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 43
         },
         __self: this
       }, this.props.link ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
@@ -257,14 +269,14 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 45
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: this.props.link,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 49
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -275,16 +287,46 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 50
         },
         __self: this
       }, this.props.link))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 55
         },
         __self: this
-      }))));
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        class: this.state.modalClass,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        class: "modal-background",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        class: "modal-content",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 60
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        class: "modal-close is-large",
+        onPress: this.modalToggle,
+        "aria-label": "close",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62
+        },
+        __self: this
+      })));
     }
   }]);
 
