@@ -174,6 +174,12 @@ function (_React$Component) {
 
   _createClass(Card, [{
     key: "render",
+    // <div class={this.state.modalClass}>
+    //   <div class="modal-background"></div>
+    //   <div class="modal-content">
+    //   </div>
+    //   <button class="modal-close is-large" onPress={this.modalToggle} aria-label="close"></button>
+    // </div>
     value: function render() {
       var _this2 = this;
 
@@ -184,7 +190,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 42
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -194,21 +200,21 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 43
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: this.props.src,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 44
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "column is-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 46
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
@@ -216,7 +222,7 @@ function (_React$Component) {
         style: styles.p,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 47
         },
         __self: this
       }, this.props.title, " "), this.props.role ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -227,13 +233,13 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 48
         },
         __self: this
       }, this.props.role) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 48
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -241,7 +247,7 @@ function (_React$Component) {
         style: styles.p,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 49
         },
         __self: this
       }, this.props.desc, " "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -252,7 +258,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 50
         },
         __self: this
       }, this.props.link ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Square, {
@@ -269,14 +275,14 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 52
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: this.props.link,
+        href: this.props.link == "Coming Soon!" ? "" : this.props.link,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 56
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -287,46 +293,16 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 57
         },
         __self: this
       }, this.props.link))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
-        },
-        __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: this.state.modalClass,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 58
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "modal-background",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 59
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "modal-content",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 60
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        class: "modal-close is-large",
-        onPress: this.modalToggle,
-        "aria-label": "close",
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 62
         },
         __self: this
-      })));
+      }))));
     }
   }]);
 
