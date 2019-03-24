@@ -45,8 +45,8 @@ const Index = () => (
             </div>
             <div className="column is-7">
               <img src="/static/img/built.png" />
-              <Card src="/static/img/labsLine.png" title="Penn Labs Website" github="https://github.com/pennlabs/pennlabs.org" link="www.pennlabs.org" desc="Converted the organizational website of Penn Labs, a software development organization at Penn, from HTML to React and added style and functionality components." />
-              <Card src="/static/img/ergbotLine.png" title="Ergbot Web and iOS App" link="www.ergbotrowing.com" desc="Contributing code to both the iOS and Web app for ErgBot, a erg-logging software startup, in React Native and React." />
+              <Card src="/static/img/labsLine.png" title="Penn Labs Website" github="https://github.com/pennlabs/pennlabs.org" link="https://www.pennlabs.org" desc="Converted the organizational website of Penn Labs, a software development organization at Penn, from HTML to React and added style and functionality components." />
+              <Card src="/static/img/ergbotLine.png" title="Ergbot Web and iOS App" link="https://www.ergbotrowing.com" desc="Contributing code to both the iOS and Web app for ErgBot, a erg-logging software startup, in React Native and React." />
               <Card src="/static/img/mindbankLine.png" title="MindBank Website" link="Coming Soon!" github="https://github.com/evakill/mindbank-web" desc="Designing and creating the organizational website of The MindBank, a consulting group at Penn, in React." />
               <Card src="/static/img/grapevineLine.png" title="Grapevine" github="https://github.com/evakill/grapevine-mobile" desc="Created the concept, design, and codebase for Grapevine, a platform for small business owners to crowdsource event marketing, on mobile and web platforms in React Native and React." />
               <Card src="/static/img/setLine.png" title="Set" github="https://github.com/evakill/set" desc="Implemented a digital version of the Set card game in Java." />
@@ -86,9 +86,9 @@ const Index = () => (
             </div>
             <div className="column is-7">
               <img src="/static/img/do.png" />
-              <Card src="/static/img/mindbankLine.png" title="The MindBank" role="President" desc="The MindBank is a student consulting group at Penn which provides advice and insights to companies, businesses, and startups focused on the campus environment." link="www.themindbank.net" />
-              <Card src="/static/img/labsLine.png" title="Penn Labs" role="Platform Team" desc="Penn Labs is a student-run, open-source software development organization at Penn that creates and maintains products for Penn students." link="www.pennlabs.org" />
-              <Card src="/static/img/whiskLine.png" title="Penn Appetit" role="Culinary Team" desc="Penn Appetit is a culinary club at Penn which produces food magazines each semester." link="www.pennappetit.com" />
+              <Card src="/static/img/mindbankLine.png" title="The MindBank" role="President" desc="The MindBank is a student consulting group at Penn which provides advice and insights to companies, businesses, and startups focused on the campus environment." link="https://www.themindbank.net" />
+              <Card src="/static/img/labsLine.png" title="Penn Labs" role="Platform Team" desc="Penn Labs is a student-run, open-source software development organization at Penn that creates and maintains products for Penn students." link="https://www.pennlabs.org" />
+              <Card src="/static/img/whiskLine.png" title="Penn Appetit" role="Culinary Team" desc="Penn Appetit is a culinary club at Penn which produces food magazines each semester." link="https://www.pennappetit.com" />
               <Card src="/static/img/soccerLine.png" title="Penn Women's Club Soccer" role="Center Midfielder" desc="Penn Women's Club soccer competes competitively with schools in the mid-Atlantic region." />
               <Card src="/static/img/oaxLine.png" title="OAX" role="Standards Committee" desc="OAX is a social philanthropic organization at Penn which fund-raises for Women Against Abuse, a non-profit dedicated to domestic violence prevention and awareness." />
             </div>
