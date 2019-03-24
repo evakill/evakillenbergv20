@@ -6087,7 +6087,7 @@ var Index = function Index() {
     src: "/static/img/labsLine.png",
     title: "Penn Labs Website",
     github: "https://github.com/pennlabs/pennlabs.org",
-    link: "https://www.pennlabs.org",
+    link: "https://pennlabs.org",
     desc: "Converted the organizational website of Penn Labs, a software development organization at Penn, from HTML to React and added style and functionality components.",
     __source: {
       fileName: _jsxFileName,

@@ -45,7 +45,7 @@ const Index = () => (
             </div>
             <div className="column is-7">
               <img src="/static/img/built.png" />
-              <Card src="/static/img/labsLine.png" title="Penn Labs Website" github="https://github.com/pennlabs/pennlabs.org" link="https://www.pennlabs.org" desc="Converted the organizational website of Penn Labs, a software development organization at Penn, from HTML to React and added style and functionality components." />
+              <Card src="/static/img/labsLine.png" title="Penn Labs Website" github="https://github.com/pennlabs/pennlabs.org" link="https://pennlabs.org" desc="Converted the organizational website of Penn Labs, a software development organization at Penn, from HTML to React and added style and functionality components." />
               <Card src="/static/img/ergbotLine.png" title="Ergbot Web and iOS App" link="https://www.ergbotrowing.com" desc="Contributing code to both the iOS and Web app for ErgBot, a erg-logging software startup, in React Native and React." />
               <Card src="/static/img/mindbankLine.png" title="MindBank Website" link="Coming Soon!" github="https://github.com/evakill/mindbank-web" desc="Designing and creating the organizational website of The MindBank, a consulting group at Penn, in React." />
               <Card src="/static/img/grapevineLine.png" title="Grapevine" github="https://github.com/evakill/grapevine-mobile" desc="Created the concept, design, and codebase for Grapevine, a platform for small business owners to crowdsource event marketing, on mobile and web platforms in React Native and React." />
