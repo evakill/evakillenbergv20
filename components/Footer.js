@@ -28,7 +28,7 @@ class Footer extends React.Component {
                 pose={this.state.h1 ? "hovered" : "idle"}
                 onMouseEnter={() => this.setState({ h1: true })}
                 onMouseLeave={() => this.setState({ h1: false })}>
-                  <a href="https://github.com/evakill">
+                  <a target="_blank" href="https://github.com/evakill">
                     <span className="icon" style={{color: "black"}}>
                       <i className="fab fa-github-square"></i>
                     </span>
@@ -38,7 +38,7 @@ class Footer extends React.Component {
                 pose={this.state.h2 ? "hovered" : "idle"}
                 onMouseEnter={() => this.setState({ h2: true })}
                 onMouseLeave={() => this.setState({ h2: false })}>
-                  <a href="https://www.linkedin.com/in/evakill/">
+                  <a target="_blank" href="https://www.linkedin.com/in/evakill/">
                     <span className="icon" style={{color: "black"}}>
                       <i className="fab fa-linkedin"></i>
                     </span>
@@ -48,7 +48,7 @@ class Footer extends React.Component {
                 pose={this.state.h3 ? "hovered" : "idle"}
                 onMouseEnter={() => this.setState({ h3: true })}
                 onMouseLeave={() => this.setState({ h3: false })}>
-                  <a href="mailto:evakill@seas.upenn.edu">
+                  <a target="_blank" href="mailto:evakill@seas.upenn.edu">
                     <span className="icon" style={{color: "black"}}>
                       <i className="fa fa-envelope-square"></i>
                     </span>

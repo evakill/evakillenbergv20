@@ -30,13 +30,6 @@ class Card extends React.Component {
     this.setState({modalClass: newClass});
   }
 
-  // <div class={this.state.modalClass}>
-  //   <div class="modal-background"></div>
-  //   <div class="modal-content">
-  //   </div>
-  //   <button class="modal-close is-large" onPress={this.modalToggle} aria-label="close"></button>
-  // </div>
-
   render() {
     return(
       <div className="is-flex columns" style={{padding: "0.25rem"}}>
@@ -53,7 +46,7 @@ class Card extends React.Component {
               pose={this.state.h1 ? "hovered" : "idle"}
               onMouseEnter={() => this.setState({ h1: true })}
               onMouseLeave={() => this.setState({ h1: false })}>
-                <a href={this.props.link == "Coming Soon!" ? "" : this.props.link}>
+                <a target="_blank" href={this.props.link == "Coming Soon!" ? "" : this.props.link}>
                   <span className="tag has-text-grey is-size-7" style={{padding: '0px 5px', margin: '0px 10px 0px 0px'}}>
                     {this.props.link}
                   </span>
@@ -62,7 +55,6 @@ class Card extends React.Component {
               ) : <div></div> }
           </div>
         </div>
-
       </div>
     );
   }

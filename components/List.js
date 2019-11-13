@@ -33,7 +33,7 @@ class Card extends React.Component {
     return(
       <div>
         { this.props.link ? (
-          <a href={this.props.link}>
+          <a target="_blank" href={this.props.link}>
             <div className="content" style={{padding: '.25rem 2rem'}}>
               <b className="is-size-6" style={ styles.p }>{this.props.title}</b>
               { this.props.role ? <p className="is-8" style={{fontFamily: "Roboto", color: "gray"}}>{this.props.role}</p> : <div></div> }
@@ -55,4 +55,4 @@ class Card extends React.Component {
 
 
 //<i className="fas fa-angle-down has-text-grey" style={{marginLeft: 10}}></i>
-  export default Card;
+export default Card;
