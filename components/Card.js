@@ -1,13 +1,4 @@
-import posed from "react-pose";
-
-const Square = posed.div({
-  idle: {
-    scale: 1,
-  },
-  hovered: {
-    scale: 1.05,
-  }
-});
+import s from 'styled-components'
 
 const styles = {
   p: {
@@ -16,11 +7,16 @@ const styles = {
   }
 }
 
+const Link = s.span`
+  padding: 0px 5px;
+  margin: '0px 10px 0px 0px';
+  font-size: 12px;
+`
+
 class Card extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      h1: false,
       modal: "modal",
     }
   }
@@ -42,16 +38,11 @@ class Card extends React.Component {
           <p className="is-size-6" style={ styles.p }>{this.props.desc} </p>
           <div className="container is-flex" style={{alignItems: "flex-end", justifyContent: "space-between"}}>
             { this.props.link ? (
-              <Square
-              pose={this.state.h1 ? "hovered" : "idle"}
-              onMouseEnter={() => this.setState({ h1: true })}
-              onMouseLeave={() => this.setState({ h1: false })}>
-                <a target="_blank" href={this.props.link == "Coming Soon!" ? "" : this.props.link}>
-                  <span className="tag has-text-grey is-size-7" style={{padding: '0px 5px', margin: '0px 10px 0px 0px'}}>
-                    {this.props.link}
-                  </span>
-                </a>
-              </Square>
+              <a target="_blank" href={this.props.link == "Coming Soon!" ? "" : this.props.link}>
+                <Link className="tag has-text-grey is-size-7">
+                  {this.props.link}
+                </Link>
+              </a>
               ) : <div></div> }
           </div>
         </div>

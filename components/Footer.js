@@ -1,9 +1,14 @@
-import posed from "react-pose";
+import s from 'styled-components'
 
-const Square = posed.div({
-  idle: { scale: 1 },
-  hovered: { scale: 1.25 }
-});
+const Icon = s.span`
+  color: black !important;
+  font-size: 18px;
+  padding: 5;
+  &:hover {
+    transform: scale(1.1);
+    transition: all .1s ease-in-out;
+  }
+`
 
 class Footer extends React.Component {
   constructor(props) {
@@ -24,38 +29,28 @@ class Footer extends React.Component {
             <em className="subtitle is-size-7" style={{color: "black", padding: 0, margin: 0 }}> site + graphics by</em>
               <b className="is-size-5" style={{color: "black"}}> Eva Killenberg </b>
               <div style={{display:"flex", justifyContent:"center", padding: 0, margin: 0}}>
-                <Square
-                pose={this.state.h1 ? "hovered" : "idle"}
-                onMouseEnter={() => this.setState({ h1: true })}
-                onMouseLeave={() => this.setState({ h1: false })}>
                   <a target="_blank" href="https://github.com/evakill">
-                    <span className="icon" style={{color: "black"}}>
-                      <i className="fab fa-github-square"></i>
-                    </span>
+                    <Icon className="icon">
+                      <i className="fab fa-github-square"/>
+                    </Icon>
                   </a>
-                </Square>
-                <Square
-                pose={this.state.h2 ? "hovered" : "idle"}
-                onMouseEnter={() => this.setState({ h2: true })}
-                onMouseLeave={() => this.setState({ h2: false })}>
                   <a target="_blank" href="https://www.linkedin.com/in/evakill/">
-                    <span className="icon" style={{color: "black"}}>
-                      <i className="fab fa-linkedin"></i>
-                    </span>
+                    <Icon className="icon">
+                      <i className="fab fa-linkedin"/>
+                    </Icon>
                   </a>
-                </Square>
-                <Square
-                pose={this.state.h3 ? "hovered" : "idle"}
-                onMouseEnter={() => this.setState({ h3: true })}
-                onMouseLeave={() => this.setState({ h3: false })}>
                   <a target="_blank" href="mailto:evakill@seas.upenn.edu">
-                    <span className="icon" style={{color: "black"}}>
-                      <i className="fa fa-envelope-square"></i>
-                    </span>
+                    <Icon className="icon">
+                      <i className="fa fa-envelope-square"/>
+                    </Icon>
                   </a>
-                </Square>
+                  <a target="_blank" href="/static/resume.pdf">
+                    <Icon className="icon">
+                    <i class="fa fa-file-pdf"/>
+                    </Icon>
+                  </a>
               </div>
-              <em className="subtitle is-size-7" style={{color: "black", padding: 0, margin: 0 }}>2019</em>
+              <em className="subtitle is-size-7" style={{color: "black", padding: 0, margin: 0}}>2019</em>
             </div>
           </div>
         </div>

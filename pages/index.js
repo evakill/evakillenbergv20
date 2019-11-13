@@ -3,31 +3,43 @@ import Card from '../components/Card'
 import List from '../components/List'
 import Header from '../components/Header'
 import sections from '../static/sections.js'
+import s from 'styled-components'
+
+const Hover = s.div`
+  transform: scale(1);
+  transition: all 0.5s ease;
+  cursor: default;
+  &:hover {
+    transform: scale(1.08);
+`
 
 const Index = () => (
   <div>
-    <div className="columns  is-centered is-desktop" style={{padding: '0rem 4rem'}}>
+    <div className="columns is-centered is-desktop" style={{padding: '0rem 4rem'}}>
       <div className="column is-10">
       <Header />
-
       { sections.main.map(section => {
         const imgSection = (
-          <a target="_blank" href={section.link}>
-            <img src={section.doodle}/>
-          </a>
+          <Hover>
+            <a target="_blank" href={section.link}>
+                <img src={section.doodle}/>
+            </a>
+          </Hover>
         )
 
         const infoSection = (
           <div>
             <img src={section.titleImg} />
             { section.things.map(thing => (
-              <Card
-                src={ thing.icon }
-                title={ thing.name }
-                github={ thing.github }
-                link={ thing.link }
-                desc={ thing.desc }
-                role={ thing.role } />
+              <Hover>
+                <Card
+                  src={ thing.icon }
+                  title={ thing.name }
+                  github={ thing.github }
+                  link={ thing.link }
+                  desc={ thing.desc }
+                  role={ thing.role } />
+              </Hover>
             )) }
           </div>
         )
@@ -64,9 +76,11 @@ const Index = () => (
 
       <section id="inspir-aspr-rumin-ations">
         <div className="is-flex is-centered" style={{padding: '0', margin: '0', display: "flex", justifyContent: "center"}}>
-          <a target="_blank" href="https://artsandculture.google.com/asset/viva-la-vida/bAGbsL-eW4XUXg">
-            <img src="/static/img/thinking.png" width="500px"/>
-          </a>
+          <Hover>
+            <a target="_blank" href="https://artsandculture.google.com/asset/viva-la-vida/bAGbsL-eW4XUXg">
+              <img src="/static/img/thinking.png" width="500px"/>
+            </a>
+          </Hover>
         </div>
 
         <div className="columns">
@@ -74,7 +88,9 @@ const Index = () => (
             <div className="column is-one-third" style={{padding: '0', margin: '0'}}>
               <img src={section.titleImg}/>
               { section.things.map(thing => (
-                <List title={thing.title} desc={thing.desc} link={thing.link} />
+                <Hover>
+                  <List title={thing.title} desc={thing.desc} link={thing.link} />
+                </Hover>
               ))}
             </div>
           ))}

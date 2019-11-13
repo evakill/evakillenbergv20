@@ -1,11 +1,11 @@
 export default {
   built: [
     {
-      name: "Penn Labs Website",
-      icon: "/static/img/labsLine.png",
-      github: "https://github.com/pennlabs/pennlabs.org",
-      link: "https://pennlabs.org",
-      desc: `Converted the organizational website of Penn Labs, a software development organization at Penn, from HTML to React and added style and functionality components.`
+      name: "Penn Clubs",
+      icon: "/static/img/clubs.png",
+      github: "https://github.com/pennlabs/clubs",
+      link: "https://pennclubs.com",
+      desc: `Worked with a team to build and deploy Penn Clubs, an interactive user-based platform for Penn students to browse, favorite, and manage their membership in campus organizations, with a React frontend and a Django backend.`
     },
     {
       name: "Ergbot Web and iOS App",
@@ -14,11 +14,18 @@ export default {
       desc: `Contributing code to both the iOS and Web app for ErgBot, a erg-logging software startup, in React Native and React.`
     },
     {
+      name: "Penn Labs Website",
+      icon: "/static/img/labsLine.png",
+      github: "https://github.com/pennlabs/pennlabs.org",
+      link: "https://pennlabs.org",
+      desc: `Converted the organizational website of Penn Labs, a software development organization at Penn, from HTML to React and added style and functionality components.`
+    },
+    {
       name: "MindBank Website",
       icon: "/static/img/mindbankLine.png",
       link: "https://pennmindbank.com",
       github: "https://github.com/evakill/mindbank-web",
-      desc: `Designing and creating the organizational website of The MindBank, a consulting group at Penn, in React.`
+      desc: `Designed and created the organizational website of The MindBank, a consulting group at Penn, in React.`
     },
     {
       name: "Grapevine",
@@ -37,7 +44,7 @@ export default {
     {
       icon: "/static/img/121.png",
       name: "Data Structures and Algorithms",
-      desc: `Learned about the theory, implementation, and runtime of basic data structures and algorithms in a computer science course.`
+      desc: `Learned about the theory, implementation, and runtime of data structures and algorithms.`
     },
     {
       icon: "/static/img/160.png",
@@ -48,6 +55,11 @@ export default {
       icon: "/static/img/nets.png",
       name: "Network Theory",
       desc: `Learned about graph stuctures and algorithms in relation to social networks, recommendation systems, and search engines.`
+    },
+    {
+      icon: "/static/img/philly.png",
+      name: "Urban Redevelopment",
+      desc: `Studied the historical movements in urban redvelopment, analyzed a local redevelopment plan, and created a redevelopment plan for a given site.`
     },
     {
       icon: "/static/img/systems.png",
@@ -64,7 +76,7 @@ export default {
     {
       icon: "/static/img/labsLine.png",
       name: "Penn Labs",
-      role: "Team Lead, Frontend Engineer",
+      role: "Full-Stack Engineer",
       desc: `Penn Labs is a student-run, open-source software development organization at Penn that creates and maintains products for Penn students.`,
       link: "https://www.pennlabs.org"
     },
@@ -98,31 +110,27 @@ export default {
   ],
   inspirations: [
     {
+      title: "New Zealand's 'Well-Being Budget'",
+      desc: "Prime Minister Jacinda Arden's approach to bolstering her nation's livelihood.",
+      link: "https://www.weforum.org/agenda/2019/05/new-zealand-is-publishing-its-first-well-being-budget/"
+    },
+    {
       title: "Frida Khalo",
       desc: "A bold artist and woman."
     },
     {
       title: "Invisible Cities",
       desc: "A beautiful text by Italo Calvino."
-    },
-    {
-      title: "On Vegetables",
-      desc: "Jeremy Fox's ode to modern, plant-based cooking.",
-      link: "https://www.eater.com/cookbooks/2017/4/14/15300286/cookbook-on-vegetables-jeremy-fox"
     }
   ],
   aspirations: [
     {
-      title: "Build in Python",
-      desc: "Looking to learn and apply a new language."
+      title: "Data-driven project",
+      desc: "Looking to apply my skills to collect and analyze data to solve a project in my environment."
     },
     {
-      title: "Learn Spanish",
-      desc: "Inspired by a trip to Mexico City and my bilingual roommate."
-    },
-    {
-      title: "Sketch a day",
-      desc: "Keep in touch with good ol' pen and paper."
+      title: "Learn how to ollie",
+      desc: "The amateur skaterboard owner's transition to skater girl."
     },
     {
       title: "Roadtrip across the US",
@@ -130,6 +138,11 @@ export default {
     }
   ],
   ruminations : [
+    {
+      title: "Sidewalk Labs",
+      desc: "A tech company's mission to reimagine a cleaner, greener, more equitable, and more accessible urban landscape in the Waterfront District of Toronto.",
+      link: "https://www.sidewalktoronto.ca/"
+    },
     {
       title: "The 'Software Apocalypse'",
       desc: "A change of perspective stimulated by an article in The Atlantic.",
