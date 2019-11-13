@@ -46,7 +46,7 @@ const Index = () => (
 
         return (
           <section>
-            <div className="columns">
+            <div className="columns" style={{ paddingBottom: '4rem' }}>
               { section.imgConfig === "left" ? (
                 <>
                   <div className={"column is-5 is-flex"} style={{alignItems: "center"}}>
@@ -85,7 +85,7 @@ const Index = () => (
 
         <div className="columns">
           { sections.other.map(section => (
-            <div className="column is-one-third" style={{padding: '0', margin: '0'}}>
+            <div className="column is-one-third">
               <img src={section.titleImg}/>
               { section.things.map(thing => (
                 <Hover>
