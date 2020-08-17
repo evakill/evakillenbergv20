@@ -90,7 +90,7 @@ export default {
     {
       icon: "/static/img/soccerLine.png",
       name: "Penn Women's Club Soccer",
-      role: "Center Midfielder, Web Manager",
+      role: "Captain, Center Midfielder, Web Manager",
       desc: `Penn Women's Club soccer competes competitively with schools in the mid-Atlantic region.`,
       link: "https://sites.google.com/site/upennclubsoccer/"
     },

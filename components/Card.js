@@ -13,6 +13,12 @@ const Container = s.div`
   color: black !important;
 `
 
+const Img = s.img`
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+`
+
 class Card extends React.Component {
   constructor(props){
     super(props);
@@ -30,7 +36,7 @@ class Card extends React.Component {
     return(
       <Container className="columns is-flex">
         <div className="column is-2 is-2-mobile is-flex">
-          <img src={this.props.src}/>
+          <Img src={this.props.src}/>
         </div>
         <div className="column is-10">
           <b className="is-size-5 is-size-6-mobile">{this.props.title} </b>

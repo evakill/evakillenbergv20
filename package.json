@@ -6,6 +6,7 @@
   "dependencies": {
     "bulma": "^0.7.1",
     "next": "^7.0.2-canary.8",
+    "nodemon": "^2.0.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-pose": "^4.0.4",

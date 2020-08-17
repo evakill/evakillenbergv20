@@ -5,14 +5,6 @@ import Header from '../components/Header'
 import sections from '../static/sections.js'
 import s from 'styled-components'
 
-const Hover = s.div`
-  transform: scale(1);
-  transition: all 0.5s ease;
-  cursor: default;
-  &:hover {
-    transform: scale(1.08);
-`
-
 const Index = () => (
   <div>
     <div className="columns is-centered is-desktop" style={{padding: '0rem 4rem'}}>
@@ -20,18 +12,17 @@ const Index = () => (
       <Header />
       { sections.main.map(section => {
         const imgSection = (
-          <Hover>
+          <div>
             <a target="_blank" href={section.link}>
                 <img src={section.doodle}/>
             </a>
-          </Hover>
+          </div>
         )
 
         const infoSection = (
           <div>
             <img src={section.titleImg} />
             { section.things.map(thing => (
-              <Hover>
                 <Card
                   src={ thing.icon }
                   title={ thing.name }
@@ -39,7 +30,6 @@ const Index = () => (
                   link={ thing.link }
                   desc={ thing.desc }
                   role={ thing.role } />
-              </Hover>
             )) }
           </div>
         )
@@ -76,11 +66,11 @@ const Index = () => (
 
       <section id="inspir-aspr-rumin-ations">
         <div className="is-flex is-centered" style={{padding: '0', margin: '0', display: "flex", justifyContent: "center"}}>
-          <Hover>
+          <div>
             <a target="_blank" href="https://artsandculture.google.com/asset/viva-la-vida/bAGbsL-eW4XUXg">
               <img src="/static/img/thinking.png" width="500px"/>
             </a>
-          </Hover>
+          </div>
         </div>
 
         <div className="columns">
@@ -88,9 +78,7 @@ const Index = () => (
             <div className="column is-one-third">
               <img src={section.titleImg}/>
               { section.things.map(thing => (
-                <Hover>
                   <List title={thing.title} desc={thing.desc} link={thing.link} />
-                </Hover>
               ))}
             </div>
           ))}
