@@ -7,30 +7,30 @@ import s from 'styled-components'
 
 const Index = () => (
   <div>
-    <div className="columns is-centered is-desktop" style={{padding: '0rem 4rem'}}>
-      <div className="column is-10">
-      <Header />
-      { sections.main.map(section => {
-        const imgSection = (
-          <div>
-            <a target="_blank" href={section.link}>
-                <img src={section.doodle}/>
-            </a>
-          </div>
-        )
+    <div className="columns is-centered is-desktop" style={{padding: '0rem 4rem 0rem 2rem'}}>
+        <div className="column is-10">
+        <Header />
+        {sections.main.map(section => {
+            const imgSection = (
+                <div>
+                    <a target="_blank" href={section.link}>
+                        <img src={section.doodle}/>
+                    </a>
+                </div>
+            )
 
         const infoSection = (
-          <div>
-            <img src={section.titleImg} />
-            { section.things.map(thing => (
-                <Card
-                  src={ thing.icon }
-                  title={ thing.name }
-                  github={ thing.github }
-                  link={ thing.link }
-                  desc={ thing.desc }
-                  role={ thing.role } />
-            )) }
+            <div>
+                <img src={section.titleImg} />
+                {section.things.map(thing => (
+                    <Card
+                        src={ thing.icon }
+                        title={ thing.name }
+                        github={ thing.github }
+                        link={ thing.link }
+                        desc={ thing.desc }
+                        role={ thing.role } />
+                ))}
           </div>
         )
 
@@ -76,7 +76,7 @@ const Index = () => (
         <div className="columns">
           { sections.other.map(section => (
             <div className="column is-one-third">
-              <img src={section.titleImg}/>
+              <img src={section.titleImg} style={{ marginBottom: 15 }}/>
               { section.things.map(thing => (
                   <List title={thing.title} desc={thing.desc} link={thing.link} />
               ))}

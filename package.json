@@ -4,14 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "bulma": "^0.7.1",
-    "next": "^7.0.2-canary.8",
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "bulma": "^0.9.1",
+    "next": "^10.0.3",
     "nodemon": "^2.0.2",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-pose": "^4.0.4",
-    "react-scripts": "^2.1.2",
-    "styled-components": "^4.3.2"
+    "react-scripts": "^4.0.1",
+    "styled-components": "^5.2.1"
   },
   "scripts": {
     "dev": "next",
@@ -20,6 +21,6 @@
     "heroku-postbuild": "next build"
   },
   "engines": {
-    "node": "v8.11.2"
+    "node": "v12.13.1"
   }
 }

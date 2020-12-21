@@ -7,12 +7,12 @@ const Container = s.div`
   color: black;
 `
 
-export default (props) => {
+export default function List (props) {
   if (props.link) {
     return (
       <Container>
         <a target="_blank" style={{ color: 'black' }} href={props.link || '#'}>
-          <p className="is-size-6"><b>{props.title}</b></p>
+          <p className="is-size-6" style={{ fontWeight: 500 }}>{props.title}</p>
           <p className="is-size-7">{props.desc}</p>
         </a>
       </Container>
@@ -20,7 +20,7 @@ export default (props) => {
   }
   return (
     <Container>
-      <p className="has-text-black is-size-6"><b>{props.title}</b></p>
+      <p className="has-text-black is-size-6" style={{ fontWeight: 500 }}>{props.title}</p>
       <p className="has-text-black is-size-7">{props.desc}</p>
     </Container>
   )

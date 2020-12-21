@@ -1,4 +1,5 @@
 import s from 'styled-components'
+import React from 'react'
 
 const Link = s.span`
   padding: 0px 5px;
@@ -14,9 +15,10 @@ const Container = s.div`
 `
 
 const Img = s.img`
-    width: 100%;
-    height: auto;
     object-fit: contain;
+    padding: 5;
+    width: 190px;
+    height: auto;
 `
 
 class Card extends React.Component {
@@ -39,7 +41,7 @@ class Card extends React.Component {
           <Img src={this.props.src}/>
         </div>
         <div className="column is-10">
-          <b className="is-size-5 is-size-6-mobile">{this.props.title} </b>
+          <p className="is-size-5 is-size-6-mobile" style={{ fontWeight: 500 }}>{this.props.title}</p>
           { this.props.role ? <p className="is-size-6 is-size-7-mobile" style={{color: "gray"}}>{this.props.role}</p> : '' }
           <p className="is-size-6">{this.props.desc} </p>
           <div className="container is-flex">

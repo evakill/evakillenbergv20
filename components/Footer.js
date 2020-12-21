@@ -22,7 +22,6 @@ const tags = [
 const Icon = s.span`
   color: black !important;
   font-size: 18px;
-  padding: 5;
   &:hover {
     transform: scale(1.1);
     transition: all .1s ease-in-out;
@@ -41,19 +40,21 @@ const Container = s.div`
   font-family: Roboto;
 `
 
-export default () => (
-  <Container>
-    <em style={{ fontSize: 12 }}> site + graphics by</em>
-    <b className="is-size-5"> Eva Killenberg </b>
-    <div style={{ display:"flex", justifyContent:"center" }}>
-      { tags.map(tag => (
-        <a target="_blank" href={tag.link}>
-          <Icon className="icon">
-            <i className={tag.icon}/>
-          </Icon>
-        </a>
-      ))}
-    </div>
-    <em style={{ fontSize: 12 }}>2019</em>
-  </Container>
-)
+export default function Footer () {
+    return (
+        <Container>
+          <em style={{ fontSize: 12 }}> site + graphics by</em>
+          <b className="is-size-5"> Eva Killenberg </b>
+          <div style={{ display:"flex", justifyContent:"center" }}>
+            { tags.map(tag => (
+              <a target="_blank" href={tag.link} style={{ margin: 5}}>
+                <Icon>
+                  <i className={tag.icon}/>
+                </Icon>
+              </a>
+            ))}
+          </div>
+          <em style={{ fontSize: 12 }}>Last Updated: December 2020</em>
+        </Container>
+    )
+}
