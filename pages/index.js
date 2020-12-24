@@ -1,65 +1,100 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Footer from '../components/Footer'
+import Card from '../components/Card'
+import List from '../components/List'
+import Header from '../components/Header'
+import sections from '../public/sections.js'
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+function getImageSection(section) {
+    return (
+        <div>
+            <a target="_blank" href={section.link}>
+                <img src={section.doodle} />
+            </a>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+    )
 }
+
+function getInfoSection(section) {
+    return (
+        <div>
+            <img src={section.titleImg} />
+            {section.things.map((thing) => (
+                <Card
+                    src={thing.icon}
+                    title={thing.name}
+                    github={thing.github}
+                    link={thing.link}
+                    desc={thing.desc}
+                    role={thing.role}
+                />
+            ))}
+        </div>
+    )
+}
+
+const Index = () => (
+    <div>
+        <div className="columns is-centered is-desktop columns-container">
+            <div className="column is-10">
+                <Header />
+                {sections.main.map((section) => (
+                    <div className="columns section-container">
+                        {section.imgConfig === 'left' ? (
+                            <>
+                                <div className="column is-5 is-flex is-align-content-center">
+                                    {getImageSection(section)}
+                                </div>
+                                <div className="column is-7">
+                                    {getInfoSection(section)}
+                                </div>
+                            </>
+                        ) : (
+                            <>
+                                <div className="column is-5 is-flex is-hidden-tablet is-align-content-center">
+                                    {getImageSection(section)}
+                                </div>
+                                <div className="column is-7">
+                                    {getInfoSection(section)}
+                                </div>
+                                <div className="column is-5 is-flex is-hidden-mobile is-align-content-center">
+                                    {getImageSection(section)}
+                                </div>
+                            </>
+                        )}
+                    </div>
+                ))}
+
+                <section id="inspir-aspr-rumin-ations">
+                    <div className="is-flex is-centered is-justify-content-center">
+                        <div>
+                            <a
+                                target="_blank"
+                                href="https://artsandculture.google.com/asset/viva-la-vida/bAGbsL-eW4XUXg"
+                            >
+                                <img src="/img/thinking.png" width="500px" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className="columns">
+                        {sections.other.map((section) => (
+                            <div className="column is-one-third">
+                                <img src={section.titleImg} />
+                                {section.things.map((thing) => (
+                                    <List
+                                        title={thing.title}
+                                        desc={thing.desc}
+                                        link={thing.link}
+                                    />
+                                ))}
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            </div>
+        </div>
+        <Footer />
+    </div>
+)
+
+export default Index
