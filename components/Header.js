@@ -1,6 +1,7 @@
 import s from 'styled-components'
 import Head from 'next/head'
 import prefix from '../utils/prefix';
+import Image from 'next/image'
 
 const Container = s.div`
   font-family: Roboto;
@@ -22,7 +23,7 @@ export default function Header() {
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet" />
       </Head>
       <div>
-        <img
+        <Image
           src={`${prefix}/static/img/header.png`}
           style={{ padding: '3rem 0rem' }}
           alt="Header"
