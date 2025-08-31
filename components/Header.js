@@ -21,7 +21,9 @@ export default function Header() {
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet" />
       </Head>
       <div>
-        <img src={process.env.NODE_ENV === 'production' ? '/evakillenbergv20' : '' + "/static/img/header.png"} style={{ padding: '3rem 0rem' }} />
+        <img
+          src={`${process.env.NODE_ENV === 'production' ? '/evakillenbergv20' : ''}/static/img/header.png`}
+          style={{ padding: '3rem 0rem' }} />
       </div>
       <p className="is-size-4 is-size-6-mobile">
         And this is my website.
