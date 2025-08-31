@@ -1,5 +1,6 @@
 import s from 'styled-components'
 import React from 'react'
+import prefix from '../utils/prefix'
 
 const Link = s.span`
   padding: 0px 5px;
@@ -38,7 +39,7 @@ class Card extends React.Component {
     return (
       <Container className="columns is-flex">
         <div className="column is-2 is-2-mobile is-flex">
-          <Img src={`${process.env.NODE_ENV === 'production' ? '/evakillenbergv20' : ''}this.props.src}`} />
+          <Img src={`${prefix}${this.props.src}`} />
         </div>
         <div className="column is-10">
           <p className="is-size-5 is-size-6-mobile" style={{ fontWeight: 500 }}>{this.props.title}</p>

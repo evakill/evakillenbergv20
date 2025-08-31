@@ -1,5 +1,6 @@
 import s from 'styled-components'
 import Head from 'next/head'
+import prefix from '../utils/prefix';
 
 const Container = s.div`
   font-family: Roboto;
@@ -22,8 +23,10 @@ export default function Header() {
       </Head>
       <div>
         <img
-          src={`${process.env.NODE_ENV === 'production' ? '/evakillenbergv20' : ''}/static/img/header.png`}
-          style={{ padding: '3rem 0rem' }} />
+          src={`${prefix}/static/img/header.png`}
+          style={{ padding: '3rem 0rem' }}
+          alt="Header"
+        />
       </div>
       <p className="is-size-4 is-size-6-mobile">
         And this is my website.
